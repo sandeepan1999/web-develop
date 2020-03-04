@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="validation.js"></script>
+  </head>
+  <body>
+    <div class="register">
+
+
+    <h1>Registration Details:</h1>
+    <br>
+    <form class="" name="myForm" action="register.php" onsubmit="return validate()" method="post">
+
+
+    <table cellspacing="20">
+
+
+      <tr>
+        <td>
+
+        <label for="">Name: </label></td>
+      <td><input id="a" type="text" name="Name" value=""></td>
+      <td><p id="p1"></p></td>
+      </tr>
+
+      <br><br>
+      <tr>
+        <td><label for="">Email: </label></td>
+        <td><input id="e" type="email" name="EMail" value=""></td>
+        <td><p id="p3"></p></td>
+      </tr>
+      <br><br>
+      <tr>
+        <td><label for="">Password: </label></td>
+        <td><input type="password" name="Pass" id="b" value="">   </td>
+      </tr>
+      <tr>
+        <td>Phone No: </td>
+        <td><input type="tel" name="Tel" value="" id="g"></td>
+      </tr>
+      <tr>
+        <td>Zip Code: </td>
+        <td><input id='zip' type="text" name="Zip"></td>
+        <td><p id="p6"></p></td>
+      </tr>
+      <tr>
+        <td>Gender: </td>
+        <td><input type="radio" name="GenM" value="1">Male <input type="radio" name="GenF" value="2">Female</td>
+      </tr>
+      <tr>
+        <td>Languages: </td>
+        <td><input type="checkbox" name="eng" value="1">English <input type="checkbox" name="hin" value="2">Hindi <input type="checkbox" name="tam" value="3">Tamil</td>
+      </tr>
+      <tr>
+        <td>Country: </td>
+        <td>
+          <select id="state" class="" name="Country">
+            <option value="-1">Select</option>
+            <option value="1">India</option>
+            <option value="2">US</option>
+            <option value="3">UK</option>
+          </select>
+        </td>
+        <td><p id="p4"></p></td>
+      </tr>
+      <tr>
+        <td>Address: </td>
+        <td><textarea id='addr' rows="10" cols="40" name="Add"></textarea></td>
+        <td><p id="p5"></p></td>
+      </tr>
+      <tr>
+        <td><input id='submit' type="submit" value="Submit"></td>
+      </tr>
+
+    </table>
+    </form>
+</div>
+  </body>
+</html>
